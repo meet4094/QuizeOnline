@@ -3,10 +3,10 @@
     <div class="container-fluid">
         <div class="main-header-left">
             <a class="main-logo d-lg-none" href="dashboard">
-                <img src="" class="header-brand-img desktop-logo" alt="">
-                <img src="" class="header-brand-img icon-logo" alt="">
-                <img src="" class="header-brand-img desktop-logo theme-logo" alt="">
-                <img src="" class="header-brand-img icon-logo theme-logo" alt="">
+                <img src="{{ asset('logo.png') }}" class="header-brand-img desktop-logo" alt="">
+                <img src="{{ asset('logo.png') }}" class="header-brand-img icon-logo" alt="">
+                <img src="{{ asset('logo.png') }}" class="header-brand-img desktop-logo theme-logo" alt="">
+                <img src="{{ asset('logo.png') }}" class="header-brand-img icon-logo theme-logo" alt="">
             </a>
             <a class="main-header-menu-icon" href="" id="mainSidebarToggle"><span></span></a>
         </div>

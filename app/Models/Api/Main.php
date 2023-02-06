@@ -68,7 +68,8 @@ class Main extends Model
         $CategoryData = DB::table('categories')->where('id', $req->category_id)->first();
         $data = array([
             'id' => $CategoryData->id,
-            'language_name' => $CategoryData->category_name,
+            'category_name' => $CategoryData->category_name,
+            'category_image' => asset('images/category/' . $CategoryData->category_image),
             'status' => $CategoryData->is_del,
         ]);
         return $data;
@@ -79,8 +80,9 @@ class Main extends Model
         $builder = DB::table('questions');
         $builder->where('category_id', $req->category_id);
         $builder->where('language_id', $req->language_id);
+        $builder->inRandomOrder();
+        $builder->limit(20);
         $QuestionsData = $builder->get();
-
         $data = array();
         foreach ($QuestionsData as $Questions) {
             $data = array([
@@ -91,7 +93,7 @@ class Main extends Model
                 'answer_c' => $Questions->answer_c,
                 'answer_d' => $Questions->answer_d,
                 'correct_answer' => $Questions->correct_answer,
-                'question_image' => $Questions->question_image,
+                'question_image' => asset('images/question/' . $Questions->question_image),
                 'status' => $Questions->is_del,
             ]);
         }

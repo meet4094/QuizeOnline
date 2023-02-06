@@ -1,5 +1,5 @@
  <!-- Favicon -->
- <link rel="icon" href="{{ asset('assets/img/brand/favicon.ico" type="i') }}mage/x-icon" />
+ <link rel="icon" href="{{ asset('logo.png') }}"="image/x-icon" />
 
  <!-- Title -->
  <title>QuizOnline -  Admin Panel</title>
