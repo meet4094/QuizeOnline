@@ -1,0 +1,233 @@
+{
+	"info": {
+		"_postman_id": "8d12719a-467e-4890-8c6a-bdc472cfc836",
+		"name": "QuizOnline",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23568815"
+	},
+	"item": [
+		{
+			"name": "Api Call",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "6aevdR8PErUuLE6",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "device_id",
+							"value": "TEST4",
+							"type": "text"
+						},
+						{
+							"key": "package_name",
+							"value": "XYZ",
+							"type": "text"
+						},
+						{
+							"key": "app_version",
+							"value": "1.1",
+							"type": "text"
+						},
+						{
+							"key": "app_version_code",
+							"value": "123",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{QuizOnline}}api/apicall",
+					"host": [
+						"{{QuizOnline}}api"
+					],
+					"path": [
+						"apicall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Language",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "6aevdR8PErUuLE6",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "app_token",
+							"value": "nznCy1xCoU8N375",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "TEST4",
+							"type": "text"
+						},
+						{
+							"key": "app_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "language_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{QuizOnline}}api/language",
+					"host": [
+						"{{QuizOnline}}api"
+					],
+					"path": [
+						"language"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "6aevdR8PErUuLE6",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "app_token",
+							"value": "nznCy1xCoU8N375",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "TEST4",
+							"type": "text"
+						},
+						{
+							"key": "app_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{QuizOnline}}api/category",
+					"host": [
+						"{{QuizOnline}}api"
+					],
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Questions",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Request-Token",
+						"value": "6aevdR8PErUuLE6",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "app_token",
+							"value": "nznCy1xCoU8N375",
+							"type": "text"
+						},
+						{
+							"key": "device_id",
+							"value": "TEST4",
+							"type": "text"
+						},
+						{
+							"key": "app_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "language_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "category_id",
+							"value": "6",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{QuizOnline}}api/questions",
+					"host": [
+						"{{QuizOnline}}api"
+					],
+					"path": [
+						"questions"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "QuizOnline",
+			"value": "https://envatomarket.aryatechlabs.com/QuizOnline/"
+		}
+	]
+}
