@@ -19,7 +19,8 @@ class LanguageController extends Controller
 
     public function index()
     {
-        return view('language');
+        $data['title'] = 'language';
+        return view('language', $data);
     }
 
     public function LanguageData(Request $req)

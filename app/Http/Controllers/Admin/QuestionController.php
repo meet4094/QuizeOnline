@@ -30,6 +30,7 @@ class QuestionController extends Controller
             $res['mes_dis'] = "none";
             $res['res'] = "block";
         }
+        $res['title'] = 'question';
         return view('question', $res);
     }
 

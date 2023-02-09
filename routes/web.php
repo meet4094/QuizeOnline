@@ -28,9 +28,9 @@ Route::group(['middleware' => 'guest'], function () {
 Route::group(['middleware' => 'auth'], function () {
     Route::get('logout', [AuthController::class, 'logout'])->name('logout');
 
-    // Dashboard
-    Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
-    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    // // Dashboard
+    Route::get('/', [DashboardController::class, 'index'])->name('index');
+    Route::get('dashboard', [DashboardController::class, 'index'])->name('index');
 
     // Language
     Route::get('language', [LanguageController::class, 'index'])->name('language');
@@ -47,7 +47,6 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/Edit_CategoryData/{id}', [CategoryController::class, 'Edit_CategoryData'])->name('Edit_CategoryData');
     Route::post('/Delete_CategoryData', [CategoryController::class, 'Delete_CategoryData'])->name('Delete_CategoryData');
     Route::post('/CategoryData', [CategoryController::class, 'CategoryData'])->name('CategoryData');
-
 
     // Question
     Route::get('question', [QuestionController::class, 'index'])->name('question');

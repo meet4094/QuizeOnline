@@ -17,7 +17,8 @@ class ApiCallController extends Controller
 
     public function index()
     {
-        return view('apicall');
+        $data['title'] = 'apicall';
+        return view('apicall', $data);
     }
 
     public function Get_ApiCallData()

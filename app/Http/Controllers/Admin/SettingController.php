@@ -18,7 +18,8 @@ class SettingController extends Controller
 
     public function index()
     {
-        return view('setting');
+        $data['title'] = 'appsetting';
+        return view('setting', $data);
     }
 
     public function Get_AppSettingData()

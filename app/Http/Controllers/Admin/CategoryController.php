@@ -30,6 +30,7 @@ class CategoryController extends Controller
             $res['mes_dis'] = "none";
             $res['btn'] = "block";
         }
+        $res['title'] = 'category';
         return view('category', $res);
     }
 

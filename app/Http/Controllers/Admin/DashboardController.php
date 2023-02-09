@@ -14,6 +14,8 @@ class DashboardController extends Controller
         $data['categories_data'] = DB::table('categories')->count();
         $data['questions_data'] = DB::table('questions')->count();
         $data['api_calls_data'] = DB::table('api_calls')->count();
+
+        $data['title'] = 'dashboard';
         return view('dashboard', $data);
     }
 }
